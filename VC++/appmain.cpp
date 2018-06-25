@@ -240,7 +240,7 @@ CQEVENT(int32_t, __eventRequest_AddFriend, 24)(int32_t subType, int32_t sendTime
 */
 CQEVENT(int32_t, __eventRequest_AddGroup, 32)(int32_t subType, int32_t sendTime, int64_t fromGroup, int64_t fromQQ, const char *msg, const char *responseFlag) {
 
-	if (subType == 1 && fromGroup == 703730184) {
+	if (subType == 1 && fromGroup == 703730184 && (msg == "昆中"||msg == "昆山中学" || msg == "日比中"||msg=="江苏省昆山中学")) {
 		CQ_setGroupAddRequestV2(ac, responseFlag, REQUEST_GROUPADD, REQUEST_ALLOW, "");
 	} 
 	//else if (subType == 2) {
